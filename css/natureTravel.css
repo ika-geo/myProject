@@ -1,0 +1,268 @@
+.natureTravel{
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 500px){
+    .natureTravel{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.natureTravel__block{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.natureTravel__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+.natureTravel__side{
+    width: 30%;
+}
+
+
+@media screen and (max-width: 768px){
+    .natureTravel__content{
+        width: 100%;
+    }
+
+    .natureTravel__side{
+        display: none;
+    }
+}
+
+
+.natureTravel__item.full{
+    width: 100%;
+}
+
+.natureTravel__item.half{
+    width: 47%;
+}
+
+@media screen and (max-width: 550px){
+    .natureTravel__item.half{
+        width: 100%;
+    }
+}
+
+
+.natureTravel__item{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.natureTravel__item::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(0,0,0,0.7) 100%);
+    z-index: 70;
+}
+
+
+
+.natureTravel__text{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    z-index: 100;
+}
+
+.natureTravel__text a.title{
+    margin-bottom: 3%;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    background-color: #b17f19;
+    border-radius: 10px;
+    padding: 5px 15px;
+    transition-duration: .3s;
+    flex-shrink: revert;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+
+.natureTravel__text a.title:hover{
+    background-color: #eade07;
+    transition-duration: .3s;
+}
+
+.natureTravel__text p{
+    color: white;
+    font-size: 20px;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5%;
+}
+
+
+.natureTravel__side .natureTravel__item2 {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.natureTravel__item2 {
+    width: 47%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 550px){
+    .natureTravel__item2 {
+        width: 100%;
+    }
+}
+
+
+.natureTravel__item2 img{
+    width: 40%;
+    height: fit-content;
+    margin-right: 10px;
+}
+
+.natureTravel__item2 a{
+    color: black;
+    transition-duration: .3s;
+    margin-bottom: 20px;
+}
+
+.natureTravel__item2 a span{
+    color: red;
+    font-weight: bold;
+}
+
+
+.natureTravel__item2 a:hover{
+    color: #0073ff;
+    transition-duration: .3s;
+}
+
+.natureTravel__text2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.natureTravel__commentDate{
+    margin-bottom: 20px;
+}
+
+.natureTravel__comment{
+    margin-right: 15px;
+}
+
+
+
+
+/*banner animation*/
+
+
+.banner1{
+    animation: banner1 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.banner2{
+    animation: banner2 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.downBanner{
+    width: 100%;
+    transition-duration: .3s;
+}
+
+.downBanner:hover{
+    transform: scale(1.1);
+    transition-duration: .3s;
+}
+
+
+@keyframes banner1 {
+    0%{
+        transform: scale(0.92);
+    }
+
+    50%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(0.92);
+    }
+}
+
+@keyframes banner2 {
+    0%{
+        transform: rotate(0deg);
+    }
+
+
+    25%{
+        transform: rotate(-3deg);
+    }
+
+    50%{
+        transform: rotate(3deg);
+    }
+
+    75%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

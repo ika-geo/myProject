@@ -1,0 +1,166 @@
+.attraction{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px){
+    .attraction{
+        margin-bottom: 20px;
+    }
+}
+
+.attraction .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.attraction__block{
+    width: 65%;
+}
+
+.attraction__side{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 768px){
+    .attraction__block{
+        width: 100%;
+    }
+
+    .attraction__side{
+        display: none;
+    }
+}
+
+
+
+/*content*/
+
+
+.attraction__mainSub{
+    display: none;
+}
+
+.attraction__mainSub.active{
+    display: block;
+}
+
+
+
+
+
+.attraction__item{
+    margin-bottom: 30px;
+}
+
+.attraction__item.full{
+    margin-bottom: 40px;
+}
+
+.attraction__item.full img{
+    margin-bottom: 10px;
+}
+
+.attraction a h2{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #003adb;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+
+.attraction a h2:hover{
+    color: #00c4ff;
+    transition-duration: .3s;
+}
+
+
+.attraction__item.full p{
+    text-indent: 15px;
+}
+
+.attraction__item.side{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 425px){
+    .attraction__item.side{
+        flex-direction: column;
+    }
+}
+
+
+
+.attraction__item.side img{
+    max-width: 25%;
+}
+
+@media screen and (max-width: 425px){
+    .attraction__item.side img{
+        max-width: 100%;
+    }
+}
+
+
+.attraction__itemText{
+    max-width: 70%;
+}
+
+@media screen and (max-width: 425px){
+    .attraction__itemText{
+        max-width: unset
+    }
+}
+
+
+
+.attraction__count{
+    display: flex;
+}
+
+.attraction__count div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    border: 1px solid black;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.attraction__count div.active{
+    background-color: #969696;
+}
+
+
+.attraction__count div:hover{
+    background-color: #00e1ff;
+    transition-duration: .3s;
+}
+
+.attraction__banner img{
+    transition-duration: 0.3s;
+}
+
+.attraction__banner img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
+.attraction__sideItem{
+    margin-bottom: 30px;
+}
+
+.attraction__sideItem img, .attraction__sideItem a, .attraction__sideItem p{
+    margin-bottom: 10px;
+}
+
