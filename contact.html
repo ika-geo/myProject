@@ -90,26 +90,26 @@
 
         <div class="contact__block">
 
-            <form action="submit">
+            <form action="POST">
 
                 <div class="contact__item half">
                     <label for="contactName">FULL NAME</label>
-                    <input id="contactName" type="text" required>
+                    <input name="name" id="contactName" type="text" required>
                 </div>
 
                 <div class="contact__item half">
                     <label for="contactEmail">EMAIL ADDRESS</label>
-                    <input id="contactEmail" type="email" required>
+                    <input name="email" id="contactEmail" type="email" required>
                 </div>
 
                 <div class="contact__item full">
                     <label for="contactSubject">SUBJECT</label>
-                    <input id="contactSubject" type="text">
+                    <input name="subject" id="contactSubject" type="text">
                 </div>
 
                 <div class="contact__item full">
                     <label for="contactText">MESSAGE</label>
-                    <textarea id="contactText" required></textarea>
+                    <textarea name="text" id="contactText" required></textarea>
                 </div>
 
                 <input type="submit" class="contactForm__submit">
